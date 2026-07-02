@@ -17,7 +17,7 @@ module sparse_buffer #(
         logic   signed  [BW_ACT-1:0]    wet     ;
     } fifo_t;
 
-    fifo_t  [BUF_DEPTH-1:0]         fifo    ;
+    fifo_t  [BUF_DEPTH-1:0]         fifo        ;
     logic   [$clog2(BUF_DEPTH)-1:0] ptr_old     ;
     logic   [$clog2(BUF_DEPTH)-1:0] ptr_young   ;
 

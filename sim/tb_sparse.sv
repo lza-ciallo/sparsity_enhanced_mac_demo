@@ -118,7 +118,7 @@ module tb_sparse import sim_pkg::*;;
         $display("======================================");
         $display("Speedup: %0d / %0d = %0.3f",
                 58020, $time, 58020.0 / (1.0 * $time));
-        $display("SparseRatio: 1 - %0d / %0d = %0.3f",
+        $display("Sparse ratio: 1 - %0d / %0d = %0.3f",
                 cal_cnt, MAT_LEN * NUM_TESTS, 1 - (1.0 * cal_cnt) / (MAT_LEN * NUM_TESTS));
         $finish(0);
     end
